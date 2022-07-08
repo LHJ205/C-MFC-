@@ -1,0 +1,282 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CryptDES.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CryptDES.ico"
+IDI_ICON1_jisuan        ICON                    "res\\计算器.ico"
+IDI_ICON_TOM            ICON                    "res\\卡通肖像图标.ico"
+IDI_ICON_search         ICON                    "res\\搜索.ico"
+IDI_ICON4               ICON                    "res\\文件夹草莓.ico"
+IDI_ICON_bag            ICON                    "res\\文件夹工具箱.ico"
+IDI_ICON_mybag          ICON                    "res\\文件夹我的文档图标.ico"
+IDI_ICON_key            ICON                    "res\\密钥.ico"
+IDI_ICON_encrypt        ICON                    "res\\加密的.ico"
+IDI_ICON_decrypt        ICON                    "res\\加密文件密钥.ico"
+IDI_ICON_filede         ICON                    "res\\文档加密.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CryptDES"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CryptDES 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006  曹杰",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CRYPTDES_DIALOG DIALOGEX 0, 0, 631, 459
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "L&W"
+FONT 9, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    GROUPBOX        "加密(输入/输出)",IDC_STATIC,18,33,318,114,BS_CENTER
+    PUSHBUTTON      "浏览文件",IDC_BUTTON_ENCRYPTFILE,292,47,26,23,BS_ICON,WS_EX_DLGMODALFRAME
+    LTEXT           "密钥：",IDC_STATIC,25,101,25,12
+    EDITTEXT        IDC_EDIT_ENCRYPT,60,99,217,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "加密",IDC_BUTTON_ENCRYPT,164,118,23,25,BS_ICON,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "解密(输入/输出)",IDC_STATIC,17,151,318,122,BS_CENTER
+    PUSHBUTTON      "浏览文件",IDC_BUTTON_DECRYPTFILE,292,166,26,25,BS_ICON,WS_EX_DLGMODALFRAME
+    LTEXT           "密钥：",IDC_STATIC,27,227,25,12
+    EDITTEXT        IDC_EDIT_DECRYPT,55,225,217,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "解密",IDC_BUTTON_DECRYPT,164,242,23,24,BS_ICON,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_ENCRYPTFILE,58,51,218,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DECRYPTFILE,55,173,218,16,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "选择目录",IDC_BUTTON_ENCRYPTFOLDER,285,75,44,15,0,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT_ENCRYPTFILEOUT,59,75,218,16,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "选择目录",IDC_BUTTON_DECRYPTFOLDER,283,197,44,15,0,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT_DECRYPTOUT,55,197,218,16,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "输入文件",IDC_STATIC,21,55,34,12
+    LTEXT           "输出文件",IDC_STATIC,21,75,34,12
+    LTEXT           "输入文件",IDC_STATIC,19,173,34,12
+    LTEXT           "输出文件",IDC_STATIC,19,199,34,12
+    EDITTEXT        IDC_EDIT1,37,333,226,22,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,74,375,249,35,ES_MULTILINE | ES_READONLY
+    PUSHBUTTON      "浏览文件",IDC_OPENFILE,289,331,26,24,BS_ICON,WS_EX_DLGMODALFRAME
+    CTEXT           "欢迎进入您的私人文件管家",IDC_STATIC,185,9,274,9,SS_CENTERIMAGE
+    GROUPBOX        "DES加解密",IDC_STATIC,9,21,332,263
+    GROUPBOX        "MD5码",IDC_STATIC,10,290,331,145
+    LTEXT           "请选择需要产生消息摘要的文件",IDC_STATIC,131,310,117,10
+    EDITTEXT        IDC_KEYLEFT,409,255,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_KEYRIGHT,501,255,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PUE,521,291,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PRD,452,291,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PRN,387,292,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_INPUT,379,338,226,31,ES_MULTILINE
+    EDITTEXT        IDC_OUTPUT,379,370,226,35,ES_MULTILINE
+    PUSHBUTTON      "生成密钥",IDC_CREATKEY,579,267,23,25,BS_ICON,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "签名",IDOK,413,408,50,14,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "验证",IDOK2,498,409,50,14,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "RSA数字签名",IDC_STATIC,346,217,273,218
+    GROUPBOX        "密钥生成区",IDC_STATIC,355,234,258,85
+    GROUPBOX        "签名与验证区",IDC_STATIC,355,322,258,108
+    LTEXT           "输入",IDC_STATIC,361,347,17,8
+    LTEXT           "输出",IDC_STATIC,361,382,17,8
+    LTEXT           "消息摘要",IDC_STATIC,36,393,33,8
+    EDITTEXT        IDC_EDIT2_P,419,51,40,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3_A,512,52,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "计算",IDC_BUTTON1,571,49,18,18,BS_ICON,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT5_K1,418,94,30,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6_AA,418,118,30,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "产生",IDC_BUTTON2,458,91,19,19,BS_ICON,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "计算",IDC_BUTTON3,458,113,19,19,BS_ICON,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT7_K2,537,96,30,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8_BB,537,118,30,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "产生",IDC_BUTTON4,578,91,19,19,BS_ICON,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "计算",IDC_BUTTON5,579,113,18,18,BS_ICON,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT10_KA,439,164,51,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11_KB,439,184,51,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "生成密钥",IDC_BUTTON6,506,159,20,20,BS_ICON,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "生成密钥",IDC_BUTTON7,506,183,20,19,BS_ICON,WS_EX_DLGMODALFRAME
+    GROUPBOX        "初始化",IDC_STATIC,365,36,237,41
+    LTEXT           "输入素数",IDC_STATIC,374,55,33,8
+    GROUPBOX        "用户A",IDC_STATIC,366,84,115,53
+    GROUPBOX        "用户B",IDC_STATIC,488,84,114,52
+    LTEXT           "随机数Xa",IDC_STATIC,378,98,33,8
+    LTEXT           "交换数Ya",IDC_STATIC,378,120,33,8
+    LTEXT           "随机数Xb",IDC_STATIC,498,100,33,8
+    LTEXT           "交换数Yb",IDC_STATIC,498,120,33,8
+    GROUPBOX        "共享密钥生成区",IDC_STATIC,366,150,237,58
+    LTEXT           "用户A",IDC_STATIC,407,168,21,8
+    LTEXT           "用户B",IDC_STATIC,407,188,21,8
+    GROUPBOX        "Diffie-Hellman密钥交换",IDC_STATIC,346,20,273,194,BS_RIGHT
+    GROUPBOX        "随机数",IDC_STATIC,366,240,203,35,BS_CENTER
+    GROUPBOX        "密钥",IDC_STATIC,367,278,201,36,BS_CENTER
+    LTEXT           "P1",IDC_STATIC,398,258,9,8
+    LTEXT           "P2",IDC_STATIC,487,257,9,8
+    LTEXT           "n",IDC_STATIC,373,294,8,8
+    LTEXT           "d",IDC_STATIC,438,294,8,8
+    LTEXT           "e",IDC_STATIC,508,293,8,8
+    LTEXT           "生成元",IDC_STATIC,482,55,27,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "CryptDES Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "CryptDES"
+            VALUE "LegalCopyright", "版权所有 (C) 2006"
+            VALUE "OriginalFilename", "CryptDES.EXE"
+            VALUE "ProductName", "CryptDES 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CRYPTDES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 625
+        BOTTOMMARGIN, 444
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 CryptDES(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CryptDES.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

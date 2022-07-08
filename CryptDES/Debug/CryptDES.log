@@ -1,0 +1,36 @@
+﻿生成启动时间为 2022/7/7 19:56:53。
+     1>项目“H:\xuststudy\密码学c++作业\最终版\CryptDES\CryptDES.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         F:\xuexi\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp".\Debug\CryptDES.pch" /Fo".\Debug\\" /Fd".\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+     1>f:\xuexi\visual studio\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         f:\xuexi\visual studio\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         F:\xuexi\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp".\Debug\CryptDES.pch" /Fo".\Debug\\" /Fd".\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt CryptDES.cpp CryptDESDlg.cpp DES.cpp GfL.cpp
+         GfL.cpp
+         DES.cpp
+         CryptDESDlg.cpp
+     1>h:\xuststudy\密码学c++作业\最终版\cryptdes\cryptdesdlg.cpp(585): warning C4309: “=”: 截断常量值
+     1>h:\xuststudy\密码学c++作业\最终版\cryptdes\cryptdesdlg.cpp(562): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+         CryptDES.cpp
+     1>h:\xuststudy\密码学c++作业\最终版\cryptdes\cryptdes.cpp(52): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+         f:\xuexi\visual studio\vc\atlmfc\include\afxwin.h(5224): note: 参见“CWinApp::Enable3dControls”的声明
+         正在生成代码...
+     1>h:\xuststudy\密码学c++作业\最终版\cryptdes\gfl.cpp(119): warning C4700: 使用了未初始化的局部变量“i”
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0804" /nologo /fo".\Debug\CryptDES.res" CryptDES.rc 
+       Link:
+         F:\xuexi\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\CryptDES.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"F:\xuexi\Visual Studio\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:".\Debug\CryptDES.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\CryptDES.lib" /MACHINE:X86 /SAFESEH .\Debug\CryptDES.res
+         .\Debug\CryptDES.obj
+         .\Debug\CryptDESDlg.obj
+         .\Debug\DES.obj
+         .\Debug\GfL.obj
+         .\Debug\StdAfx.obj
+     1>CryptDES.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+         CryptDES.vcxproj -> H:\xuststudy\密码学c++作业\最终版\CryptDES\.\Debug\CryptDES.exe
+     1>已完成生成项目“H:\xuststudy\密码学c++作业\最终版\CryptDES\CryptDES.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:07.47

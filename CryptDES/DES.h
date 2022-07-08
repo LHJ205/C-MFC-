@@ -1,0 +1,42 @@
+// DES.h: interface for the CDES class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_DES_H__ED5BB782_2525_428A_915F_2E3CDEFC9091__INCLUDED_)
+#define AFX_DES_H__ED5BB782_2525_428A_915F_2E3CDEFC9091__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+enum    {ENCRYPT1,DECRYPT};
+typedef bool	(*PSubKey)[16][48];
+
+class CDES  
+{
+public:
+	CDES();
+	virtual ~CDES();
+
+public:
+	bool	Encrypt(char *Out,char *In,UINT len,const char *KeyStr=0);//加密
+	bool	Decrypt(char *Out,char *In,UINT len,const char *KeyStr=0);//解密
+	bool	SetSubKey(const char *KeyStr);//由输入密钥串设置子密钥
+	static	char* RandKeyStr(char KeyStr[9]);//产生随机密钥串
+private:
+
+	void	DES(char Out[8],char In[8],const PSubKey pSubKey,bool Type);//加/解密
+
+	void	SetSubKey(PSubKey pSubKey,const char Key[8]);//由输入密钥设置16圈子密钥
+	void	F_func(bool In[32],const bool Ki[48]);//f 函数
+	void	S_func(bool Out[32],const bool In[48]);//S 盒代替
+
+private:
+	bool	SubKey[2][16][48];//16圈子密钥
+	bool    Is3DES;//3次DES标志
+	char    deskey[17];//密钥串缓冲区
+
+
+};
+
+#endif // !defined(AFX_DES_H__ED5BB782_2525_428A_915F_2E3CDEFC9091__INCLUDED_)
